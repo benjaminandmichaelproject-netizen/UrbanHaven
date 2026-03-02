@@ -1,12 +1,38 @@
 {% extends "base.html" %}
 
-s
+{% load static %}
+
+
+
 
 {% block content %}
 
 
 <main class="main">
-    <h2>Welcome to UrbanHaven</h2>
+   <section class="hero">
+
+    <!-- Image -->
+    <img src="{% static 'images/city.jpg' %}" alt="Modern City" class="hero-img">
+
+    <!-- Gradient Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Content -->
+    <div class="hero-content">
+        <h1>
+            MODERN  HOME  FOR SALE
+        </h1>
+
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+
+        <h3>Want A Modern Home In Las Vegas?</h3>
+
+        <a href="#" class="hero-btn">Explore Properties</a>
+    </div>
+
+</section>
 </main>
 
 

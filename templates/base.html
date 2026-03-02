@@ -47,11 +47,13 @@
 
     {% endblock %}
 <script>
-    const menuToggle = document.getElementById('menuToggle');
+const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
+const navbar = document.querySelector('.navbar');
 
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    navbar.classList.toggle('active');   // 👈 add this line
 });
 </script>
 </body>
